@@ -10,12 +10,12 @@ book:
   page-navigation: true # true by default (adds previous/next page at bottom of page)
   chapters:
     - index.qmd
-    - intro.qmd
-    - methodology.qmd
+    # - intro.qmd
+    # - methodology.qmd
     - part: municipalities.qmd
       chapters:
-        - alsip.qmd
-        - prospect_heights.qmd
+        - muni_alsip.qmd
+        - muni_prospect_heights.qmd
   appendices:
     - references.qmd
     - definitions.qmd
@@ -27,18 +27,18 @@ format:
     theme: [journal, "profiles.scss"]
     favicon: "https://cookcountypublichealth.org/wp-content/uploads/2018/12/cropped-favicon-32x32.png"
     include-in-header: "header.html"
-    # cache: false
-    # anchor-sections: true
-    # smooth-scroll: true
-    # link-external-icon: true
-    # link-external-newwindow: true
-    # page-navigation: true
-    # echo: true
-    # eval: false
-    # warning: false
-    # code-fold: true
-    # crossref:
-    #   chapters: true
+    cache: false
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    page-navigation: true
+    echo: true
+    eval: false
+    warning: false
+    code-fold: true
+    crossref:
+      chapters: true
   
 editor: source
 editor_options: 
