@@ -1,52 +1,44 @@
 project:
   type: book
-  # output-dir: "Z:/ArcGIS/Epi_Unit_Employee_Handbook/"
 
 book:
   title: "CCDPH Community Profiles"
   subtitle: "Public health summaries of areas within suburban Cook County"
-  cover-image: handbook_cover.png
+  cover-image: profiles_cover.png
   author: "CCDPH Epidemiology Unit"
   date: "Last updated 1/13/2025"
   page-navigation: true # true by default (adds previous/next page at bottom of page)
   chapters:
     - index.qmd
-    - part: background.qmd
+    - intro.qmd
+    - methodology.qmd
+    - part: municipalities.qmd
       chapters:
-        - organization.qmd # cook county; cch; ccdph; epi unit
-      chapters:
-        - employees.qmd # resources for current staff
-    - part: data_management.qmd # data management
-      chapters:
-        - dm_plan_collect.qmd # data management section plan & design / collect & create 
+        - alsip.qmd
+        - prospect_heights.qmd
   appendices:
     - references.qmd
     - definitions.qmd
-    - acronyms.qmd
-
 
 bibliography: references.bib
 
 format:
   html:
-    theme: [journal, "handbook.scss"]
+    theme: [journal, "profiles.scss"]
     favicon: "https://cookcountypublichealth.org/wp-content/uploads/2018/12/cropped-favicon-32x32.png"
     include-in-header: "header.html"
-    cache: false
-    anchor-sections: true
-    smooth-scroll: true
-    link-external-icon: true
-    link-external-newwindow: true
-    page-navigation: true
-    echo: true
-    eval: false
-    warning: false
-    code-fold: true
-    crossref:
-      chapters: true
-      
-    # number-depth: 3
-    # toc-depth: 3
+    # cache: false
+    # anchor-sections: true
+    # smooth-scroll: true
+    # link-external-icon: true
+    # link-external-newwindow: true
+    # page-navigation: true
+    # echo: true
+    # eval: false
+    # warning: false
+    # code-fold: true
+    # crossref:
+    #   chapters: true
   
 editor: source
 editor_options: 
