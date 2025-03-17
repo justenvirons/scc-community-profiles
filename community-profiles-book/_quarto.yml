@@ -9,7 +9,6 @@ book:
   date: "Last updated 3/13/2025"
   page-navigation: true
   chapters:
-    - index.qmd
     - intro.qmd
     - scc.qmd
     - ccdph.qmd
