@@ -3,23 +3,30 @@ project:
 
 book:
   title: "CCDPH Community Profiles"
-  subtitle: "Public health summaries of areas within suburban Cook County"
+  subtitle: "Public health insights of places within suburban Cook County"
   cover-image: profiles_cover.png
   author: "CCDPH Epidemiology Unit"
-  date: "Last updated 1/13/2025"
-  page-navigation: true # true by default (adds previous/next page at bottom of page)
+  date: "Last updated 3/13/2025"
+  page-navigation: true
   chapters:
     - index.qmd
-    # - intro.qmd
-    # - methodology.qmd
+    - intro.qmd
+    - scc.qmd
+    - ccdph.qmd
+    - part: districts.qmd
+        - muni_alsip.qmd
+        - muni_prospect_heights.qmd
     - part: municipalities.qmd
       chapters:
         - muni_alsip.qmd
         - muni_prospect_heights.qmd
+    - part: zctas.qmd
   appendices:
+    - methodology.qmd
     - references.qmd
     - definitions.qmd
-
+    - acronyms.qmd
+    
 bibliography: references.bib
 
 format:
