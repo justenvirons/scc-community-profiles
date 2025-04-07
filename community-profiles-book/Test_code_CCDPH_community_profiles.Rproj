@@ -1,13 +1,59 @@
-Version: 1.0
+project:
+  type: book
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
+book:
+  title: "CCDPH Community Profiles"
+  author: "Shimu Paul"
+  date: "Last updated 3/31/2025"
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - scc.qmd
+    - ccdph.qmd
+    - part: districts.qmd
+      chapters: 
+        - North.qmd
+        - South.qmd
+        - West.qmd
+        - Southwest.qmd
+    - part: municilpalities.qmd
+      chapters:
+        - Alsip.qmd
+        - prospectheight.qmd
+    - part: zctas.qmd
+    - part: appendices.qmd
+      chapters:
+        - methodology.qmd
+        - references.qmd
+        - definitions.qmd
+        - acronyms.qmd
 
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 2
-Encoding: UTF-8
+bibliography: references.bib
 
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
+format:
+  html:
+    theme: [journal, "profiles.scss"]
+    toc: true
+    favicon: "https://cookcountypublichealth.org/wp-content/uploads/2018/12/cropped-favicon-32x32.png"
+    include-in-header: "header.html"
+    cache: false
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    page-navigation: true
+    echo: true
+    eval: false
+    warning: false
+    code-fold: true
+    crossref:
+      chapters: true
+  
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+editor_options: 
+chunk_output_type: console
+
